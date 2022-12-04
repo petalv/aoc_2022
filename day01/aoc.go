@@ -86,7 +86,6 @@ func Reducer2(shelves chan ShelfItem, reduced chan ShelfItem) {
 			}
 		}
 	}
-	fmt.Printf("%v", tops)
 	reduced <- ShelfItem{Id: -1, Calories: addArray(tops)}
 }
 
